@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #242424;
+    background: #f0f0f0;
+    overflow-x: hidden;
+}
+
+/* Hero section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5rem;
+    background: #f0f0f0;
+}
+
+.hero_container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.hero_img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile_picture {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: sepia(80%);
+    transition: all 0.6s ease;
+}
+
+.profile_picture:hover {
+    filter: sepia(0%);
+    transform: scale(1.02);
+}
+
+.hero_content h1 {
+    font-size: clamp(4em, 8vw, 7rem);
+    font-weight: 400;
+    color: #242424;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.1;
+}
+
+.hero_content .highlight {
+    color: #3767b3;
+    font-weight: 400;
+}
+
+.hero_content p {
+    font-size: 1.3rem;
+    color: black;
+    margin: 1rem 0 1.5rem;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.skills {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #f0f0f0;
+    color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    background: #5496ff;
+    color: white;
+    border-color: #5496ff;
+    transform: translateY(-1px);
+}
+
+/* Section organization */
+.section {
+    padding: 4rem 2rem;
+}
+
+.section_title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: black;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.section_title2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: white;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+/* Timeline */
+
+.academic {
+    background: white;
+}
+
+.timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline_item {
+    padding-left: 2rem;
+    border-left: 2px solid #f0f0f0;
+    position: relative;
+}
+
+.timeline_item:last-child {
+    border-left-color: transparent;
+}
+
+.timeline_content .bold {
+    font-weight: 800;
+}
+
+.timeline_content ul {
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.timeline_content li {
+    background: #fafafa;
+    padding: 1rem 2rem;
+    border-radius: 9px;
+    font-size: 0.9rem;
+    color: #242424;
+    border-left: 3px solid #5496ff;
+    transition: all 0.2s ease;
+}
+
+.timeline_content li:hover {
+    background: #5496ff;
+    color: white;
+    transform: translateX(6px);
+}
+
+.projects {
+    background: white;
+}
+
+.project_grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
+}
+
+.project_card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s ease;
+}
+
+.project_card:hover {
+    background: #fafafa;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project_image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.project_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project_img:hover {
+    transform: scale(1.02);
+}
+
+.project_content {
+    padding: 2rem;
+}
+
+.project_content h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.project_content p {
+    color: #858585;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Contact */
+.contact {
+    background: black;
+    text-align: center;
+}
+
+.contact_content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: black;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    border: 1px solid #363636;
+}
+
+.social_link:hover {
+    background: #5496ff;
+    border-color: #5496ff;
+    transform: translateY(-2px);
+}
+
+.social_link svg {
+    width: 40px;
+    height: 40px;
+    fill: white;
+    transition: fill 0.4s ease;
+}
